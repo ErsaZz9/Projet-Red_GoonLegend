@@ -1,7 +1,7 @@
 package main
 
 import (
-	"Projet-Red_GoonLegend/Menu/intro2" // Modifie selon ton arborescence
+	"Projet-Red_GoonLegend/Menu/intro" // Modifie selon ton arborescence
 )
 
 func main() {
