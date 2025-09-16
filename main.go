@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 
-	"Projet-Red_GoonLegend/Menu/intro"
 	"Projet-Red_GoonLegend/character"
+	"Projet-Red_GoonLegend/intro"
 )
 
 func main() {
@@ -25,7 +25,6 @@ func main() {
 		40,                                     // PV actuels
 		[]string{"Potion", "Potion", "Potion"}, // Inventaire
 	)
-
 	// 4. Affiche les infos du perso
 	hero.DisplayInfo()
 }
