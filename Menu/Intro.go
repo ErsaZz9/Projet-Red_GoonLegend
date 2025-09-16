@@ -5,8 +5,6 @@ import (
 	"strings"
 )
 
- func AsciiColorized() {
+func AsciiColorized() {
 
-	
-                                                                                                                           
- }
+}
