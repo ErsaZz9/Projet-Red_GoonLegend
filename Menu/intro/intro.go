@@ -36,7 +36,7 @@ func printAsciiLogo() {
                                                                                                                            
                                                                                                                            
                                                                                                                            
-             [ROT★ECHOES] — The Synaptic Decay Begins...
+             [ECHOES*OF*THE*ROT] — The Synaptic Decay Begins...
     `
 	fmt.Println("\033[35m") // Violet/Magenta
 	fmt.Println(logo)
