@@ -1,22 +1,24 @@
 package main
 
 import (
+	"fmt"
+
 	"Projet-Red_GoonLegend/Menu/intro"
 	"Projet-Red_GoonLegend/character"
-	"fmt"
 )
 
 func main() {
+	// 1. Affiche l’intro
 	intro.RunIntro()
 
-	// Input pour le nom
+	// 2. Input pour le nom du perso
 	var nom string
 	fmt.Print("Entrez le nom de votre personnage : ")
 	fmt.Scanln(&nom)
 
-	// 3. Créer le personnage
+	// 3. Crée le personnage
 	hero := character.InitCharacter(
-		nom,
+		nom,                                    // Nom (saisi par l’utilisateur)
 		"Elfe",                                 // Classe
 		1,                                      // Niveau
 		100,                                    // PV max
@@ -24,6 +26,6 @@ func main() {
 		[]string{"Potion", "Potion", "Potion"}, // Inventaire
 	)
 
-	// 4. Afficher le perso
-	fmt.Println("Personnage créé :", hero)
+	// 4. Affiche les infos du perso
+	hero.DisplayInfo()
 }
