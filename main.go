@@ -1,33 +1,40 @@
 package main
 
 import (
-	"fmt"
-
 	"Projet-Red_GoonLegend/character"
 	"Projet-Red_GoonLegend/intro"
 	"Projet-Red_GoonLegend/menu"
+	"Projet-Red_GoonLegend/save"
+	"fmt"
+	"time"
 )
 
-// fonction principale
 func main() {
 	// intro
 	intro.RunIntro()
 
-	// demander le nom
-	var nom string
-	fmt.Print("Entrez le nom de votre personnage : ")
-	fmt.Scanln(&nom)
+	// on essaye d'abord de check si il y a une sauvegarde
+	hero, err := save.LoadCharacter("save.json")
+	if err != nil {
+		fmt.Println("Aucune sauvegarde existante")
+		time.Sleep(2 * time.Second)
+		fmt.Println("Création d'un nouveau héros")
 
-	// 3. Crée le personnage
-	hero := character.InitCharacter(
-		nom, // nom en question
-		"Elfe",
-		1,
-		100,
-		40,
-		[]string{"Potion", "Potion", "Potion"},
-	)
+		// ⚡ utilise directement la fonction de création
+		hero = character.CreateCharacter()
+	} else {
+		fmt.Println("Sauvegarde chargée avec succès.")
+	}
 
-	// lancement du menu (appel du package Menu)
-	menu.Run(&hero)
+	// lancer le menu
+	menu.Run(hero)
+
+	// à la sortie du menu → on sauvegarde
+	if err := save.SaveCharacter(hero, "save.json"); err != nil {
+		fmt.Println("Erreur lors de la sauvegarde :", err)
+	} else {
+		fmt.Println("Progression sauvegardée")
+		time.Sleep(500 * time.Millisecond)
+		intro.LoadingAnimation("Fermeture", 5)
+	}
 }

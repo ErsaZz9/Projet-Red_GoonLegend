@@ -1,0 +1,58 @@
+{
+  "Nom": "Maxime",
+  "Classe": {
+    "Nom": "Humain",
+    "PVMax": 100,
+    "ManaMax": 50,
+    "Force": 10,
+    "Dexterite": 10,
+    "Description": "Polyvalent"
+  },
+  "Niveau": 1,
+  "PVMax": 100,
+  "PV": 100,
+  "Inventaire": [
+    {
+      "Nom": "Potion de soin",
+      "Type": "Potion",
+      "Prix": 0,
+      "Soin": 50,
+      "Degats": 0
+    },
+    {
+      "Nom": "Potion de soin",
+      "Type": "Potion",
+      "Prix": 0,
+      "Soin": 50,
+      "Degats": 0
+    },
+    {
+      "Nom": "Potion de soin",
+      "Type": "Potion",
+      "Prix": 0,
+      "Soin": 50,
+      "Degats": 0
+    },
+    {
+      "Nom": "Potion de soin",
+      "Type": "Potion",
+      "Prix": 0,
+      "Soin": 50,
+      "Degats": 0
+    },
+    {
+      "Nom": "Potion de soin",
+      "Type": "Potion",
+      "Prix": 0,
+      "Soin": 50,
+      "Degats": 0
+    }
+  ],
+  "Skills": [
+    {
+      "Nom": "Coup de poing",
+      "Degat": 10,
+      "CountMana": 0
+    }
+  ]
+}

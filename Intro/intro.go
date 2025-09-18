@@ -37,14 +37,12 @@ func printAsciiLogo() {
                                                                                                                            
                                                                                                                            
              [ECHOES*OF*THE*ROT] — The Synaptic Decay Begins...
-    `
-	fmt.Println("\033[35m") // Violet/Magenta
-	fmt.Println(logo)
-	fmt.Print("\033[0m") // Reset
+    ` // Violet/Magenta
+	fmt.Println(logo) // Reset
 }
 
 // Animation de chargement
-func loadingAnimation(text string, cycles int) {
+func LoadingAnimation(text string, cycles int) {
 	for i := 0; i < cycles; i++ {
 		for _, c := range []string{"|", "/", "-", "\\"} {
 			fmt.Printf("\r%s %s", text, c)
@@ -63,7 +61,7 @@ func RunIntro() {
 	time.Sleep(1 * time.Second)
 
 	slowPrint("Connexion au monde de Rotborne...", 40*time.Millisecond)
-	loadingAnimation("Chargement", 10)
+	LoadingAnimation("Chargement", 10)
 
 	slowPrint("\nLe voile s'efface... Les souvenirs reviennent...", 50*time.Millisecond)
 	time.Sleep(1 * time.Second)
