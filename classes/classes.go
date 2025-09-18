@@ -15,4 +15,7 @@ var Classes = []Classe{
 	{"Humain", 100, 50, 10, 10, "Polyvalent"},
 	{"Elfe", 80, 100, 5, 15, "Rapide et agile"},
 	{"Nain", 120, 30, 15, 5, "Solide et robuste"},
+	{"Mage", 70, 150, 3, 12, "Puissant en magie"},
+	{"Guerrier", 140, 20, 18, 8, "Combat rapproche"},
+	{"Archer", 90, 60, 8, 18, "Tir a distance"},
 }

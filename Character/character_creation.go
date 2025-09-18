@@ -28,7 +28,9 @@ func CreateCharacter() *Character {
 			// Met en majuscule la 1ère lettre de chaque mot
 			mots := strings.Fields(strings.ToLower(input))
 			for i, mot := range mots {
-				mots[i] = strings.Title(mot)
+				if len(mot) > 0 {
+					mots[i] = strings.ToUpper(string(mot[0])) + mot[1:]
+				}
 			}
 			nom = strings.Join(mots, " ")
 			break

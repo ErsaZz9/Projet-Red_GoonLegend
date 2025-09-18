@@ -16,29 +16,21 @@ func slowPrint(text string, delay time.Duration) {
 
 // Affiche le logo ASCII
 func printAsciiLogo() {
-	logo := `
-	░▒▓████████▓▒░▒▓██████▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓██████▓▒░░▒▓████████▓▒░░▒▓███████▓▒░             ░▒▓██████▓▒░░▒▓████████▓▒░      
-	░▒▓█▓▒░     ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░                   ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░             
-	░▒▓█▓▒░     ░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░                   ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░             
-	░▒▓██████▓▒░░▒▓█▓▒░      ░▒▓████████▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓██████▓▒░  ░▒▓██████▓▒░             ░▒▓█▓▒░░▒▓█▓▒░▒▓██████▓▒░        
-	░▒▓█▓▒░     ░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░             ░▒▓█▓▒░            ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░             
-	░▒▓█▓▒░     ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░             ░▒▓█▓▒░            ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░             
-	░▒▓████████▓▒░▒▓██████▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓██████▓▒░░▒▓████████▓▒░▒▓███████▓▒░              ░▒▓██████▓▒░░▒▓█▓▒░             
-                                                                                                                           
-                                                                                                                           
-	░▒▓████████▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓████████▓▒░            ░▒▓███████▓▒░ ░▒▓██████▓▒░▒▓████████▓▒░                                
-	   ░▒▓█▓▒░   ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░                   ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░                                    
-	   ░▒▓█▓▒░   ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░                   ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░                                    
-	   ░▒▓█▓▒░   ░▒▓████████▓▒░▒▓██████▓▒░              ░▒▓███████▓▒░░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░                                    
-	   ░▒▓█▓▒░   ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░                   ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░                                    
-	   ░▒▓█▓▒░   ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░                   ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░                                    
-	   ░▒▓█▓▒░   ░▒▓█▓▒░░▒▓█▓▒░▒▓████████▓▒░            ░▒▓█▓▒░░▒▓█▓▒░░▒▓██████▓▒░  ░▒▓█▓▒░                                    
-                                                                                                                           
-                                                                                                                           
-                                                                                                                           
-             [ECHOES*OF*THE*ROT] — The Synaptic Decay Begins...
-    ` // Violet/Magenta
-	fmt.Println(logo) // Reset
+	logo := "  _           _           _           \n" +
+		" | |         | |         | |          \n" +
+		" | |     __ _| |__  _   _| |__  _   _ \n" +
+		" | |    / _' | '_ \\| | | | '_ \\| | | |\n" +
+		" | |___| (_| | |_) | |_| | |_) | |_| |\n" +
+		" |______\\__,_|_.__/ \\__,_|_.__/ \\__,_|\n" +
+		"  _______    _ _                      \n" +
+		" |__   __|  (_) |                     \n" +
+		"    | | __ _ _| |                     \n" +
+		"    | |/ _' | | |                     \n" +
+		"    | | (_| | | |                     \n" +
+		"    |_|\\__,_|_|_|                     \n" +
+		"\n\n" +
+		"             [Labubu Tails] — Le sourire creux s'etend...\n"
+	fmt.Println(logo)
 }
 
 // Animation de chargement
@@ -57,13 +49,13 @@ func RunIntro() {
 	printAsciiLogo()
 	time.Sleep(1 * time.Second)
 
-	slowPrint("Bienvenue, Porteur de la volonté rot...", 50*time.Millisecond)
+	slowPrint("Bienvenue, voyageur dans l'ombre des Labubus...", 50*time.Millisecond)
 	time.Sleep(1 * time.Second)
 
-	slowPrint("Connexion au monde de Rotborne...", 40*time.Millisecond)
+	slowPrint("Connexion au Nexus des Labubus...", 40*time.Millisecond)
 	LoadingAnimation("Chargement", 10)
 
-	slowPrint("\nLe voile s'efface... Les souvenirs reviennent...", 50*time.Millisecond)
+	slowPrint("\nLe silence tremble... Les cauchemars s'eveillent...", 50*time.Millisecond)
 	time.Sleep(1 * time.Second)
 
 	slowPrint("\n[Appuyez sur Entrée pour continuer]", 40*time.Millisecond)
