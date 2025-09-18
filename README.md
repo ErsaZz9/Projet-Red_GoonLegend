@@ -1,4 +1,4 @@
-# 🎮 Projet-Red_GoonLegend
+# 🎮 LABUBU TAIL
 
 **Un MMO en de commande sur le thème des Labubus**
 
