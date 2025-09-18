@@ -12,7 +12,7 @@ import (
 // Menu principal
 func Run(hero *character.Character) {
 	for {
-		utils.ClearScreen() // ⚡ nettoie l’écran avant chaque affichage
+		utils.ClearScreen() // nettoie l’écran avant chaque affichage
 
 		options := []string{
 			"Afficher les informations du personnage",
